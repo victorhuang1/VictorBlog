@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using VictorBlog.Models;
 
 namespace VictorBlog.Data
 {
@@ -12,5 +13,6 @@ namespace VictorBlog.Data
             : base(options)
         {
         }
+        public DbSet<VictorBlog.Models.Blog> Blog { get; set; }
     }
 }

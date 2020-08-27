@@ -69,3 +69,29 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.blogContent {
+  height:200px;
+}
+
+a:hover{
+  color:red;
+  text-decoration:none;
+}
+.containerAll{
+  margin:0 auto;
+}
+
+.containerAll > li{
+  width:100px;
+  height:30px;
+  background:black;
+  text-align:center;
+  line-height:30px;
+  color:white;
+  float:left;
+  list-style:none;
+
+
+
+}

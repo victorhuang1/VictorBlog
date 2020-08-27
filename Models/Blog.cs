@@ -10,11 +10,11 @@ namespace VictorBlog.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IDBlog {get; set;}
-        [Display(Name="Pls enter Blog Title:")]
+        [Display(Name="Blog Title")]
         [StringLength(20)]
         [Required(ErrorMessage="{0} is a required field.")]
         public string BlogTitle {get; set;}
-        [Display(Name="Pls enter Blog Content:")]
+        [Display(Name="Blog Content")]
         [StringLength(200)]
         [Required(ErrorMessage="{0} is a required field.")]
         public string BlogContent {get; set;}
