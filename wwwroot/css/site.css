@@ -74,24 +74,46 @@ body {
   height:200px;
 }
 
-a:hover{
-  color:red;
-  text-decoration:none;
-}
+
 .containerAll{
+  width:60%;
   margin:0 auto;
 }
 
-.containerAll > li{
+.containerAll >ul> li{
   width:100px;
   height:30px;
   background:black;
   text-align:center;
   line-height:30px;
-  color:white;
+  color:yellow;
   float:left;
   list-style:none;
-
-
-
+  position: relative;
 }
+
+.containerAll >ul>li div {
+  width:100px;
+  height:30px;
+  position:absolute;
+  left:0;
+  /*margin-left:-15px;*/
+  top:30px;
+  background:black;
+  color:yellow;
+  display:none;
+}
+
+.containerAll >ul>li div a:hover{
+  color:yellow
+}
+
+
+  .containerAll > ul>li:hover{
+    color:black;
+    background:yellow;
+  }
+
+  .containerAll > ul>li:hover>div{
+    display:block;
+  }
